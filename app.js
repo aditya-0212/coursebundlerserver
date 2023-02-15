@@ -38,7 +38,7 @@ app.use("/api/v1",other)
 export default app;
 
 app.get("/",(req,res)=>
-res.setEncoding(`<h1>Site is Working.Click <a href=${process.env.FRONTEND_URL}> here </a> to visit fronend.</h1>`)
+res.send(`<h1>Site is Working.Click <a href=${process.env.FRONTEND_URL}> here </a> to visit fronend.</h1>`)
 )
 // jab jab next ko call krunga aur koi middlre ware bacha nhi hoga to ye ErroMiddleware call ho jaya krega
 app.use(ErrorMiddleware)
