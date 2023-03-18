@@ -24,12 +24,12 @@ app.use(express.urlencoded({
 //     methods:["GET","POST","PUT","DELETE"]
 // }))
 
-const corsOptions = {
-    AccessControlAllowOrigin: '*',
-    origin: 'ttps://adityaclasses.onrender.com',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
-  }
-  app.use(cors(corsOptions))
+// const corsOptions = {
+//     AccessControlAllowOrigin: '*',
+//     origin: 'ttps://adityaclasses.onrender.com',
+//     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
+//   }
+//   app.use(cors(corsOptions))
 
 // Importing & Using Routes
 
