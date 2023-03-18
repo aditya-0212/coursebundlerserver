@@ -19,7 +19,6 @@ app.use(cookieParser());
 //cookie ko pass krne k liye following method is compulsary
 //ye cors agar ham na de to is server se ham dusri website pr request hi nhi kar paenge
 app.use(cors({
-    AccessControlAllowOrigin: '*',
     origin:process.env.FRONTEND_URL,
     credentials:true,
     methods:["GET","POST","PUT","DELETE"]
