@@ -26,7 +26,7 @@ app.use(express.urlencoded({
 
 const corsOptions = {
     AccessControlAllowOrigin: '*',
-    origin: 'https://abc.onrender.com',
+    origin: 'ttps://adityaclasses.onrender.com',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
   }
   app.use(cors(corsOptions))
