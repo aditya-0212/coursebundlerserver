@@ -24,7 +24,13 @@ app.use(express.urlencoded({
 //     methods:["GET","POST","PUT","DELETE"]
 // }))
 
-app.use(cors({ credentials: true }))
+const corsOptions = { 
+    // origin:'https://abc.onrender.com',
+    AccessControlAllowOrigin: '*',  
+    origin: '*',  
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE' 
+  }
+  app.use(cors(corsOptions))
 
 // Importing & Using Routes
 
