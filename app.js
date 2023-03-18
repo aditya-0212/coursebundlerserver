@@ -15,23 +15,24 @@ app.use(express.urlencoded({
    extended:true,
 }))
 
-// app.use(cookieParser());
-// //cookie ko pass krne k liye following method is compulsary
-// //ye cors agar ham na de to is server se ham dusri website pr request hi nhi kar paenge
-// app.use(cors({
-//     origin:process.env.FRONTEND_URL,
-//     credentials:true,
-//     methods:["GET","POST","PUT","DELETE"]
-// }))
-
-
-
-const corsOptions = {
+app.use(cookieParser());
+//cookie ko pass krne k liye following method is compulsary
+//ye cors agar ham na de to is server se ham dusri website pr request hi nhi kar paenge
+app.use(cors({
     AccessControlAllowOrigin: '*',
-    origin: 'ttps://adityaclasses.onrender.com',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
-  }
-  app.use(cors(corsOptions))
+    origin:process.env.FRONTEND_URL,
+    credentials:true,
+    methods:["GET","POST","PUT","DELETE"]
+}))
+
+
+
+// const corsOptions = {
+//     AccessControlAllowOrigin: '*',
+//     origin: 'ttps://adityaclasses.onrender.com',
+//     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
+//   }
+//   app.use(cors(corsOptions))
 
 // Importing & Using Routes
 
