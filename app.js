@@ -24,7 +24,7 @@ app.use(express.urlencoded({
 //     methods:["GET","POST","PUT","DELETE"]
 // }))
 
-app.use(cors());
+app.use(cors({ credentials: true }))
 
 // Importing & Using Routes
 
